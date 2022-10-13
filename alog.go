@@ -102,5 +102,4 @@ func (al Alog) Stop() {
 
 // Write synchronously sends the message to the log output
 func (al Alog) Write(msg string) (int, error) {
-	return al.dest.Write([]byte(al.formatMessage(msg)))
 }
